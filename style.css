@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("assets/images/bg.jpg");
+    height: 70vh;
+    position: relative;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+}
+
+.main .box{
+    height: 70vh;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top:0;
+}
+
+nav{
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img{
+    color: red;
+    width: 148px;
+    position: relative;
+    z-index: 10;
+    margin-top: 24px;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    height: calc(100% - 62px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1){
+    font-weight: bolder;
+    font-size: 44px;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+.separation{
+    height: 11px;
+    background-color: #2c2a2a;
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: 400 ;
+    background-color: rgba(248,243,243,0.021);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red{
+    background-color: #E50914;
+    color: white;
+    padding: 12px 24px;
+    margin: 0px 0px 0px 8px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm{
+    background-color: red;
+        color: white;
+}
+
+.main input{
+    padding: 16px 24px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.2);
+    border: 1px solid rgba(246,238,238,0.5);
+    width: 36vh;
+    color: white;
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 70vw;
+    color: white;
+    align-items: center;
+    height: 60vh;
+}
+
+@media screen and (max-width:500px) {
+    .first{
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+.SecImg{
+    position: relative;
+}
+
+.SecImg img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.SecImg video{
+    position: absolute;
+    top: 80px;
+    right: 20px;  
+}
+
+section.first> div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first> div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first> div :nth-child(2){
+    font-size: 24px;
+}
+
+.SecImg2{
+    position: relative;
+}
+
+.SecImg2 img{
+    max-width: calc(100% - 1rem);
+    position: relative;
+    z-index: 10;
+}
+
+.SecImg2 video{
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 14%;
+    left: 15%;
+    z-index: -1;  
+}
+
+.faq{
+    color: white;
+    padding: 34px;
+}
+
+.faq h2{
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+.faqbox:hover{
+    background-color: #414141;;
+}
+
+
+.faqbox{
+    padding: 24px;
+    justify-content: space-between;
+    display: flex;
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 24px;
+    max-width: 55vw;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.faqbox svg{
+    color: white;
+    margin-top: 5px;   
+}
+
+footer{
+    max-width: 60vw;
+    margin: auto;
+    color: white;
+    padding: 14px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer a{
+    color: white;
+    font-size: 14px;
+}
+
+.call{
+    display: flex;
+    color: white;
+    margin: auto;
+    padding: 34px 0px;
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
